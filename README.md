@@ -6,13 +6,15 @@ This repository contains the code necessary to replicate most of the figures fea
 Portions of the codebase were adapted from existing sources [2],[3] and [4] which have been modified to fit our semi-unbalanced formulation of optimal transport. We extend our gratitude to the original authors.
 
 ## Requirements
-To run the notebooks in this repository, you'll need Python along with several packages. While the code is likely compatible with other versions of these packages, it was developed and tested with the following configurations:
+To run the notebooks in this repository, you'll need Python along with several packages. While the code is likely compatible with other versions of these packages, it was developed and tested with the following principal configurations:
 
-- Python 3.8+
-- NumPy
-- SciPy
-- Matplotlib
+- **WPP (gray images and color images), WPPNets (color images), PSinOT:**
+  - PyTorch: 1.9.0+cu111
+  - PyKeOps: 2.1.2
 
+- **WPPNets (gray images):**
+  - PyTorch: 1.10.0
+  - PyKeOps: 1.5
 
 ## References 
 - [1] Simon Mignon, Bruno Galerne, Moncef Hidane, Cécile Louchet, Julien Mille. Semi-Unbalanced Optimal Transport for Image Restoration and Synthesis. 2024.
